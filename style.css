@@ -1,0 +1,48 @@
+* {
+  color: grey;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-logo {
+  width: 50px;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  visibility: none;
+}
+.header__menu-text {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.header__menu-text :hover {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  background-color: rgb(107, 216, 152);
+}
+.header__login {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.button {
+  color: white;
+  background-color: rgb(107, 216, 152);
+  border-radius: 20px;
+  width: 50px;
+}
+.button:hover {
+  background-color: white;
+  color: rgb(107, 216, 152);
+}
+@media only screen and (min-width: 600px) {
+  .header__menu {
+    visibility: block;
+  }
+}

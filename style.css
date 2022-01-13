@@ -19,12 +19,15 @@
   display: flex;
   flex-direction: row;
   margin: 10px;
+  visibility: hidden;
 }
-.header__menu-text :hover {
+.header__menu-text:hover {
   display: flex;
   flex-direction: row;
   margin: 10px;
   background-color: rgb(107, 216, 152);
+  visibility: collapse;
+  cursor: pointer;
 }
 .header__login {
   display: flex;
@@ -40,9 +43,13 @@
 .button:hover {
   background-color: white;
   color: rgb(107, 216, 152);
+  cursor: pointer;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .header__menu {
-    visibility: block;
+    visibility: visible;
+  }
+  .header__menu-text {
+    visibility: visible;
   }
 }

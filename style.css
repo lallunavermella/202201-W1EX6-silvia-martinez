@@ -4,47 +4,66 @@
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.header-logo {
+.header__logo {
   width: 50px;
+  display: flex;
 }
 .header__menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   visibility: none;
 }
 .header__menu-text {
   display: flex;
   flex-direction: row;
   margin: 10px;
-  visibility: hidden;
+  visibility: collapse;
+  align-items: center;
+  padding: 5px;
 }
 .header__menu-text:hover {
   display: flex;
   flex-direction: row;
   margin: 10px;
   background-color: rgb(107, 216, 152);
-  visibility: collapse;
+  color: white;
+  border-radius: 20px;
   cursor: pointer;
 }
 .header__login {
   display: flex;
   flex-direction: row;
+  padding: 10px;
   margin: 10px;
+}
+.header__login-text {
+  padding: 10px;
+  margin: 10px;
+}
+.header__login-text:hover {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  background-color: rgb(107, 216, 152);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .button {
   color: white;
   background-color: rgb(107, 216, 152);
   border-radius: 20px;
-  width: 50px;
+  width: 150px;
 }
 .button:hover {
   background-color: white;
   color: rgb(107, 216, 152);
   cursor: pointer;
 }
+
 @media only screen and (min-width: 500px) {
   .header__menu {
     visibility: visible;
